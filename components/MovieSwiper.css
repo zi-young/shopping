@@ -1,0 +1,11 @@
+.banner1__img {
+    width: 50%;
+    /* object-fit: cover; */
+}
+
+.swiper1  {
+    .banner__img {
+        width: 100%;
+        >img { width: 100%;}
+    }
+}

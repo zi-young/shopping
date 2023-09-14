@@ -1,0 +1,11 @@
+.notice {padding: 10rem 5rem;}
+.notice h4 {padding-bottom: 5px; text-align: center; border-bottom: 1px solid #ccc; }
+.notice table {width: 100%; border-collapse: collapse; margin-top: 2rem; margin-bottom: 2rem;}
+.notice table thead tr th {border: 1px solid #ddd; padding: 0.5rem;}
+.notice table thead tr th:nth-child(2) {width: 65%;}
+.notice table thead tr th:nth-child(3) {width: 10%;}
+.notice table thead tr th:nth-child(4) {width: 10%;}
+.notice table thead tr th:nth-child(5) {width: 10%;}
+.notice table thead tr td:nth-child(2) {text-align: left;}
+.notice p {text-align: center;}
+.btn {cursor: pointer;}

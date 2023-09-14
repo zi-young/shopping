@@ -1,0 +1,7 @@
+.title, .content p {font-size: 1.6rem;}
+.detail {padding: 10rem 5rem;}
+.detail h3 {border-bottom: 1px solid #ddd; padding-bottom: 0.5rem; font-size: 1.8rem;}
+.detailWrap {margin-top: 3rem;}
+.text {border: 1px solid #ddd; padding: 5rem;}
+.title {padding-bottom: 0.5rem; border-bottom: 1px solid #ddd;}
+.content {margin-top: 1rem;}

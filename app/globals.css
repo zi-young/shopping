@@ -1,0 +1,264 @@
+html {
+  font-size: calc(0.42vw + 2px);
+}
+@media screen and (max-width:1200px ){
+  html {
+    font-size: calc(0.42vw + 4px);
+  }
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  color: #222;
+}
+ul {list-style: none;}
+a {
+  color: inherit;
+  text-decoration: none;
+  font-size: 1.4rem;
+}
+
+h4, h3 {font-size: 1.8rem;}
+th, td, p {font-size: 1.5rem;}
+
+.top-logo {
+  height: 18rem;
+  border-bottom: 0.1rem solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.top-logo>a {text-align: center;}
+
+.top-logo>a>img {width: 70%;}
+
+.g-menu {
+  height: 5rem;
+  border-bottom: 0.1rem solid #ddd;
+}
+
+.g-menu ul {
+  width: 100%;
+  max-width: 130rem;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  justify-content: flex-end;
+}
+
+.g-menu ul li{
+  font-size: 1.6rem;
+  margin-left: 2rem;
+}
+
+.g-menu ul li a{font-size: 1.2rem; color: #959595;}
+.g-menu ul li a:hover{color: #2a2a2a;}
+
+.menu {height: 7rem;}
+.menu>ul {
+  font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  max-width: 130rem;
+  margin: 0 auto;
+  justify-content: center;
+}
+.menu>ul>li {margin: 1rem;}
+.menu>ul>li>a {color: #3c3c3c;}
+.menu>ul>li>a:hover {color: #ff4800;}
+
+.new-arrival {
+  margin-bottom: 10rem;
+}
+.new-arrival h2 {text-align: center; margin-bottom: 1rem; font-size: 2.4rem;}
+.new-arrival p {text-align: center; color: #9c9c9c; font-size: 1.6rem;}
+.new-wrap {
+  display: flex;
+  width: 100%;
+  max-width: 130rem;
+  margin: 5rem auto 0;
+  justify-content: space-between;
+}
+.new-wrap .new-card {width: 42rem;}
+.new-wrap .new-card img {width: 100%;}
+.new-wrap .new-card .card-box {padding: 1rem 0;}
+.new-wrap .new-card .card-box  .title{font-size: 1.6rem; margin-bottom: 1rem; text-decoration: underline;}
+.new-wrap .new-card .card-box  .description{font-size: 1.4rem; margin-bottom: 1rem; line-height: 180%; height: 4rem; color: #5d5d5d;}
+.new-wrap .new-card .card-box  .price{font-size: 1.4rem;     color: #ff4800;}
+
+.notice-item {
+  opacity: 1;
+  transition: all 1s;
+}
+.notice-item td {text-align: center; border: 1px solid #ddd; padding: 0.5rem; font-size: 1.4rem;}
+.notice-item td button {border: none; padding: 0.5rem 2rem;}
+
+.loginSpan {font-size: 1.2rem; color: #959595; cursor: pointer;}
+.loginSpan:hover {color: #2a2a2a;}
+
+
+.signWrap ul {
+  list-style: none;
+}
+
+.signWrap {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.signWrap .flexBox {
+  display: flex;
+  align-items: center;
+  height: 3.6rem;
+}
+
+.signWrap .signUpArea {
+  padding: 1rem 5rem 5rem 5rem;
+  border: none;
+  margin: 0 auto;
+  width: 60rem;
+}
+
+.signWrap .signUpArea .label-style {
+  display: block;
+  margin-bottom: .5rem;
+  font-size: 1.0rem;
+}
+
+.signWrap .signUpArea .input-style {
+  width: 35rem;
+  height: 3.6rem;
+  border: 1px solid #ddd;
+  margin-right: .5rem;
+  padding: .3rem 1rem;
+  font-size: 1.3rem;
+  box-sizing: border-box;
+}
+
+.signWrap .signUpArea .input-style2 {
+  height: 3.6rem;
+  border: 1px solid #ddd;
+  width: 24.1rem;
+  font-size: 1.3rem;
+}
+
+.signWrap .signUpArea .btn-style {
+  cursor: pointer;
+  width: 20%;
+  height: 3.6rem;
+  background: #fff;
+  border: 1px solid #ddd;
+  color: #959595;
+  box-sizing: border-box;
+}
+
+.signWrap .signUpArea .submit-style {
+  width: 100%;
+  height: 5.0rem;
+  background: #644b36;
+  color: #fff;
+  font-size: 1.5rem;
+  border: none;
+  cursor: pointer;
+  transition: .5s;
+}
+.signWrap .signUpArea .submit-style:hover {
+  background: #3a2b1f;
+}
+
+.signWrap .signUpArea .select-style {
+  width: 10.0rem;
+  height: 3.6rem;
+  border: 1px solid #ddd;
+}
+
+.signWrap .signUpArea .help-style {
+  margin-top: .5rem;
+  display: block;
+  font-size: .8rem;
+  color: #959595;
+  letter-spacing: 1px;
+}
+
+.signWrap .signUpArea .area-style {
+  padding-left: 2rem;
+  padding-bottom: 20px;
+}
+
+.signWrap .signUpArea .Mes-style {
+  display: block;
+}
+
+.signWrap .signUpArea .btn-style:hover {
+  color: #000;
+}
+
+.signWrap .signUpArea .termsBox {
+  height: 15.0rem;
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  padding: 2.0rem;
+  border: 1px solid #959595;
+  margin: 1.0rem 0 2.0rem;
+}
+
+.signWrap .signUpArea .termsBox::-webkit-scrollbar {
+  display: none;
+}
+
+.signWrap .signUpArea .terms-section h3 {
+  margin-top: 30px;
+}
+
+.signWrap .submit-section {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.success-color{color: #60d119;}
+.error-color{color: red;}
+
+.commit {padding: 2rem 3rem;}
+.commit .input {width: 50%; padding: 0.5rem 2rem; margin-right: 1rem;}
+.commit .button {padding: 0.5rem 2rem; border: none; margin-top: 2rem;}
+.commitP {border-bottom: 1px solid #ddd; padding: 0.5rem 0;}
+
+.footer {
+  width: 100%;
+  height: 10rem;
+  border-top: 1px solid #ddd;
+}
+.footer .footer-inner {
+  width: 100%;
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: 3rem 0;
+}
+.footer .footer-inner>ul {display: flex; justify-content: space-between; /* font-size: 0.8rem; */}
+.footer .footer-inner>ul>li:not(:last-child) {border-right: 1px solid #ddd;}
+.footer .footer-inner>ul>li:nth-child(1) {padding-right: 10rem;}
+.footer .footer-inner>ul>li:nth-child(2) {padding-right: 10rem;}
+.footer .footer-inner>ul>li:nth-child(3) {padding-right: 10rem;}
+.footer .footer-inner>ul>li>h4 {margin-bottom: 20px; color: #3b3b3b;}
+.footer .footer-inner>ul>li>ul li {line-height: 150%;}
+.footer .footer-inner>ul>li>ul li a {font-size: 1.4rem; color: #ccc;}
+.footer .footer-inner>ul>li>ul li span {font-size: 1.2rem;}
+.footer .footer-inner>ul>li>p {margin-bottom: 2rem;}

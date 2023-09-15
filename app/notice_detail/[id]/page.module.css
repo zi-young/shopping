@@ -1,7 +1,25 @@
+.cart {width: 100%;}
+.title {width: 100%;}
 .title, .content p {font-size: 1.6rem;}
 .detail {padding: 10rem 5rem;}
-.detail h3 {border-bottom: 1px solid #ddd; padding-bottom: 0.5rem; font-size: 1.8rem;}
+.detail h3 {border-bottom: 1px solid #ddd; padding-bottom: 2rem; font-size: 1.8rem;}
 .detailWrap {margin-top: 3rem;}
 .text {border: 1px solid #ddd; padding: 5rem;}
-.title {padding-bottom: 0.5rem; border-bottom: 1px solid #ddd;}
+.title {padding-bottom: 3rem; border-bottom: 1px solid #ddd;}
 .content {margin-top: 1rem;}
+
+.buy {
+    width: 15rem;
+    padding: 3rem 2rem;
+    background: red;
+    color: #fff;
+    text-align: center;
+    margin: 1rem auto;
+    margin-top: 3rem;
+    border-radius: 5px;
+    transition: .5s;
+    cursor: pointer;
+}
+.buy:hover {
+    background: #ff4800;
+}

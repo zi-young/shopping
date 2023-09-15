@@ -241,14 +241,58 @@ th, td, p {font-size: 1.5rem;}
 .commit .button {padding: 0.5rem 2rem; border: none; margin-top: 2rem;}
 .commitP {border-bottom: 1px solid #ddd; padding: 0.5rem 0;}
 
-.cart {margin-top: 5rem;}
-.minus {cursor: pointer; display: inline-block; width: 3rem; height: 3rem; text-align: center; border: 1px solid #ddd;}
-.number {padding: 0.5rem; text-align: center;}
-.plus { cursor: pointer; display: inline-block; width: 3rem; height: 3rem; text-align: center; border: 1px solid #ddd;}
-.cartBtn {background: none;}
+.cart {margin-top: 2rem;}
+.minus {vertical-align: middle; cursor: pointer; display: inline-block; text-align: center; border: 1px solid #ddd; padding: 0.7rem 1rem; font-size: 1.6rem;}
+.number {padding: 0.5rem; text-align: center; vertical-align: middle;}
+.plus {vertical-align: middle; cursor: pointer; display: inline-block; text-align: center; border: 1px solid #ddd; padding: 0.7rem 1rem; font-size: 1.6rem;}
+.cartBtn {
+  margin-bottom: 2rem;
+  background: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 40px;
+  min-height: 25px;
+  width: 100%;
+  height: 50px;
+  font-size: 14px;
+  font-weight: 600;
+  background-color: #ffffff;
+  color: #000000;
+  border: 1px solid #d4d4d4;
+  flex: 1 1;
+}
+.buyBox {
+  display: flex;
+}
+.buy {
+  float: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 40px;
+  min-height: 25px;
+  width: 100%;
+  height: 50px;
+  font-size: 14px;
+  font-weight: 600;
+  background-color: #000;
+  color: #fff;
+  -webkit-flex: 1;
+  border: none;
+  flex: 1 1;
+  transition: .3s;
+  box-shadow: 10px 10px 16px 0 rgb(0 0 0 / 30%);
+  cursor: pointer;
+}
+.buy:hover {
+  background: #ff4800;
+}
 
 
 .cartList tr td {border-bottom: 1px solid #ddd; padding: 2rem 0; text-align: center;}
+.cartList th:nth-child(2) {display: flex;}
 .cartList tr td:nth-child(2) {text-align: left;}
 .cartList tr td span img {width: 5rem; height: 5rem; vertical-align: middle; margin-right: 1rem;}
 

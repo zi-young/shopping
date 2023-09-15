@@ -1,5 +1,3 @@
-
-
 import { getServerSession } from "next-auth";
 import { authOptions } from "../auth/[...nextauth]";
 import { connectDB } from "@/utill/database";
@@ -11,9 +9,8 @@ export default async function handler(req, res){
         let dbs={
             description: req.body.description,
             image: req.body.image,
-            price: req.body.price,
-            count: req.body.count,
-
+            price:req.body.price.toString(),
+            count:  req.body.count,
             author: session.user.email
         }
         const client= await connectDB
@@ -23,4 +20,5 @@ export default async function handler(req, res){
        
         res.redirect(302, '/cart')
     }
+    
 }

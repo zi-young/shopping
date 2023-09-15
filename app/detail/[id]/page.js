@@ -9,10 +9,10 @@ import Cart from '@/components/Cart';
 export default async function Detail(props){
     const client=await connectDB
     const db=client.db("shop")
-    let result=await db.collection('new').findOne({_id: new ObjectId(props.params.id)});
+    let result=await db.collection('new').findOne({_id:new ObjectId(props.params.id)});
     console.log(result)
     return (
-        <div className={styles.detail}>., 
+        <div className={styles.detail}>
             <div className={styles.detailWrap}>
                 <div className={styles.imgWrap}>
                     <img src={result.image} alt={result.title} />
@@ -50,14 +50,6 @@ export default async function Detail(props){
                     </div>
                     {/* <ul class="css-dgdhjg e3vsmsk4"><li role="button" class="css-ppfb76 e3vsmsk5">날짜 선택</li><li role="button" class="css-ppfb76 e3vsmsk5">4월 07일(목) [품절]</li></ul> */}
                     <p className={styles.dilivery}>{result.dilivery}</p>
-                    <div className={styles.cart}>
-                        <button className={styles.cart1}>
-                         장바구니 담기
-                        </button>
-                        <button className={styles.cart2}>
-                         바로 구매하기
-                        </button>
-                    </div>
                     <Cart result={result}/>
                 </div>
             </div>

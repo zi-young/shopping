@@ -241,6 +241,19 @@ th, td, p {font-size: 1.5rem;}
 .commit .button {padding: 0.5rem 2rem; border: none; margin-top: 2rem;}
 .commitP {border-bottom: 1px solid #ddd; padding: 0.5rem 0;}
 
+.cart {margin-top: 5rem;}
+.minus {cursor: pointer; display: inline-block; width: 3rem; height: 3rem; text-align: center; border: 1px solid #ddd;}
+.number {padding: 0.5rem; text-align: center;}
+.plus { cursor: pointer; display: inline-block; width: 3rem; height: 3rem; text-align: center; border: 1px solid #ddd;}
+.cartBtn {background: none;}
+
+
+.cartList tr td {border-bottom: 1px solid #ddd; padding: 2rem 0; text-align: center;}
+.cartList tr td:nth-child(2) {text-align: left;}
+.cartList tr td span img {width: 5rem; height: 5rem; vertical-align: middle; margin-right: 1rem;}
+
+
+
 .footer {
   width: 100%;
   height: 10rem;

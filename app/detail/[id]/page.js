@@ -2,6 +2,8 @@
 import { connectDB } from '@/utill/database'
 import styles from './page.module.css'
 import { ObjectId } from 'mongodb';
+import Cart from '@/components/Cart';
+
 
 
 export default async function Detail(props){
@@ -10,7 +12,7 @@ export default async function Detail(props){
     let result=await db.collection('new').findOne({_id: new ObjectId(props.params.id)});
     console.log(result)
     return (
-        <div className={styles.detail}>
+        <div className={styles.detail}>., 
             <div className={styles.detailWrap}>
                 <div className={styles.imgWrap}>
                     <img src={result.image} alt={result.title} />
@@ -56,6 +58,7 @@ export default async function Detail(props){
                          바로 구매하기
                         </button>
                     </div>
+                    <Cart result={result}/>
                 </div>
             </div>
             <div className={styles.detail1}>
